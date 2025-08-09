@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEVELNET Sales Reporting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      @media print {
+        body {
+          background-color: white !important;
+          color: black !important;
+        }
+        header, aside, #print-button, #filter-section {
+          display: none !important;
+        }
+        .md\:ml-64 {
+          margin-left: 0 !important;
+          padding: 0 !important;
+        }
+        main {
+          padding-top: 0 !important;
+        }
+        .printable-card {
+           box-shadow: none !important;
+           border: 1px solid #ddd !important;
+        }
+        .dark, .dark body, .dark div, .dark table, .dark tr, .dark td, .dark th, .dark thead, .dark tbody, .dark span, .dark p, .dark h1, .dark h2, .dark h3 {
+            background-color: white !important;
+            color: black !important;
+            border-color: #ddd !important;
+        }
+        a {
+            text-decoration: none !important;
+            color: black !important;
+        }
+        .dark\:bg-gray-800, .dark\:bg-gray-900, .dark\:bg-gray-700, .dark\:bg-gray-700\/50, .dark\:odd\:bg-gray-800, .dark\:even\:bg-gray-700\/50 {
+            background-color: transparent !important;
+        }
+        .even\:bg-gray-50 {
+            background-color: #f9fafb !important;
+        }
+        .dark\:text-white, .dark\:text-gray-200, .dark\:text-gray-300, .dark\:text-gray-400 {
+            color: black !important;
+        }
+        .dark\:border-gray-700 {
+            border-color: #ddd !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.7.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "recharts": "https://esm.sh/recharts@^2.12.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

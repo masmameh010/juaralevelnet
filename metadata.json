@@ -1,0 +1,6 @@
+{
+  "name": "LEVELNET Sales Reporting",
+  "description": "A web application for LEVELNET sales representatives to report their daily customer visits and for admins to review the collected data.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
